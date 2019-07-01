@@ -58,11 +58,19 @@ links[5].textContent= 'Contact';
 links.forEach(links=>links.style.color='green');
 
 const newLink = document.createElement('a');
-newLink.textContent= 'Append'
+newLink.textContent = 'Green Eggs';
+newLink.style.color = 'green';
 
-links.append(newLink);
+const newerLink = document.createElement('a');
+newerLink.textContent = 'and Ham';
+newerLink.style.color = 'green';
 
+const addLinks = document.querySelector('nav');
 
+addLinks.prepend(newLink);
+addLinks.append(newerLink);
+
+// links.appendChild(a)
 
 
 
